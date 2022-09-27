@@ -33,6 +33,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import TextTransformation from '@ckeditor/ckeditor5-typing/src/texttransformation';
 import CloudServices from '@ckeditor/ckeditor5-cloud-services/src/cloudservices';
+import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
 class ClassicEditor extends ClassicEditorBase {}
 class InlineEditor extends InlineEditorBase {}
@@ -64,7 +65,8 @@ const plugins = [
 	PictureEditing,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
+	SimpleUploadAdapter
 ];
 ClassicEditor.builtinPlugins = plugins;
 InlineEditor.builtinPlugins = plugins;
